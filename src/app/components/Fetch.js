@@ -30,7 +30,7 @@ const Fetch = () => {
         document.querySelector('.main-nav').style.display="flex"
     }
     const handlesearch=(e)=>{
-        const search=data.filter(items=>items.title.toLowerCase().includes(e.target.value))
+        const search=data.filter(items=>items.title.toLowerCase().includes(e.target.value.toLowerCase()))
         setFilterData(search)
     }
 
