@@ -56,7 +56,7 @@ const Fetch = () => {
             (filterdata.length) ? filterdata.map((e)=>(
                 <div key={e.id} className='fetch-images'>
                   <img src={e.image} alt="" />
-                  <h2>{e.price}</h2>  
+                  <h2>$ {e.price}</h2>  
                   <h4><Rating name="half-rating-read" defaultValue={e.rating.rate} precision={0.5} readOnly/></h4> 
                   <h3 className='title'>{e.title}</h3>
                   <div className='social'>
